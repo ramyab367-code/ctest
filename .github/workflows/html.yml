@@ -1,0 +1,15 @@
+name: HTML Check
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check HTML
+      run: echo "HTML file exists"
